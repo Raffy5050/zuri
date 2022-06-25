@@ -1,0 +1,94 @@
+* {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+  li, a, button {
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: crimson;
+    text-decoration: none;
+  }
+   
+  header {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+    }
+    .logo {
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .nav {
+      list-style: none;
+    }
+    .nav li{
+      display: inline-block;
+      padding: 0px 20px;
+      text-indent: 100px;
+    }
+    .nav li a {
+      transition: all 0.3s ease 0s;
+    } 
+    .nav li a:hover {
+      color:blue;
+    }
+   button {
+     padding: 9px 25px;
+     background-color: #a90000;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     color: white;
+   }
+   .pic {
+     margin-top: -100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+  .mine {
+    width: 300px;
+     clip-path: circle();
+  }
+  .caption {
+    margin-top: -100px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    margin-left: 520px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+   .caption h3 {
+    margin: 5px;
+  }
+  .caption p {
+    margin: 5px;
+  }
+   .bttn {
+    
+    background-color: #a90000;
+    border: none;
+    /* border-radius: 50px; */
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+     width: 60px;
+    margin-left: 47%; 
+  }
+   .footer { 
+     display: flex;
+   justify-content: center;
+   margin-top: 33px;
+   font-size: 20px;
+}
+  
+
+  
+  

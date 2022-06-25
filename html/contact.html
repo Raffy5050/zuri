@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        li, a, button {
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: crimson;
+    text-decoration: none;
+  }
+   
+  header {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+    }
+    .logo {
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .nav {
+      list-style: none;
+    }
+    .nav li{
+      display: inline-block;
+      padding: 0px 20px;
+      text-indent: 100px;
+    }
+    .nav li a {
+      transition: all 0.3s ease 0s;
+    } 
+    .nav li a:hover {
+      color:blue;
+    }
+    .container {
+        position: relative;
+        display:flex;
+        justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding:20px 100px;
+    } 
+    .cont-box {
+        max-width: 750px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h2 {
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .boxed {
+        width : 100%;
+        padding: 0.5rem 1rem;
+        outline:none;
+        border: 2px solid rgba(0, 0, 0, 0);
+        background-color: crimson;
+        font-size: 20px;
+        margin-bottom: 23px;
+   color: white;
+    }
+       
+input,select,textarea {
+  width: 49%;
+  padding: 5px;
+  margin: 6px 0;
+} 
+.mess {
+  width: 100%;
+  padding: 5px;
+  margin: 6px 0;
+  margin-left: 58px;
+} 
+ .bttn {
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: crimson;
+  border: 2px solid white;
+  cursor: pointer;
+  margin-left: 265px;
+  color: white;
+}
+label {
+  margin: 0 auto;
+  border: 1px solid var(--secondary);
+  padding: 10px;
+  width: 80%;
+}
+
+.main {
+  padding: 100px 0;
+  height: 460px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.sign {
+  margin: auto;
+  padding: 10px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 360px;
+}
+.head-h2 {
+  margin-top: -80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer { 
+     display: flex;
+   justify-content: center;
+   margin-top: 33px;
+   font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    
+        <header> 
+            <img src="https://zuri-inc.com/wp-content/uploads/2020/09/zuri.jpg"
+            alt="I4GxZuri Logo" width="200" height="80" class="logo"> 
+            <nav> 
+            <ul class="nav"> 
+            <li> 
+                 <a href="../index.html"> About </a> </li>
+             <li>
+                <a href="./reg.html"> Register </a>
+              </li>
+              <li> 
+                <a href="#contact"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="./login.html"> <button> Login</button> </a>
+          </header>
+        <main> 
+          <main id="contact" class="main">
+            <h2 class="head-h2">Contact Us</h2>
+            <div class="sign">
+              <form>
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name Here"
+                    required
+                    name="name"
+                    id="name"
+                  />
+                </div>
+    
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Enter Your Email Here"
+                    required
+                    name="email"
+                    id="email"
+                  />
+                </div>
+    
+                <div class="mess">
+                
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter Your Message Here"
+                    required
+                  ></textarea>
+                </div>
+    
+                <button class="bttn">Hit Us</button>
+              </form>
+            </div>
+  </main>
+</div>
+<footer> 
+  <div class="footer">
+    <p>Designed by Jamiu Rofiat</p>
+    </div>
+</footer>
+</body>
+</html>

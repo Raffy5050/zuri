@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" initial scale=" 1.0" />
+  <title>registration</title>
+  <style type="text/css"> 
+  * {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+  body {
+      /* height:200vh;
+      width: 100vw;
+      overflow:hidden; */
+      /* align-items: center;
+      display: flex; */
+  }
+  li, a, button {
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: crimson;
+    text-decoration: none;
+  }
+   
+  header {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+    }
+    .logo {
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .nav {
+      list-style: none;
+    }
+    .nav li{
+      display: inline-block;
+      padding: 0px 20px;
+      text-indent: 100px;
+    }
+    .nav li a {
+      transition: all 0.3s ease 0s;
+    } 
+    .nav li a:hover {
+      color:blue;
+    }
+   button {
+     padding: 9px 25px;
+     background-color: #a90000;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     color: white;
+   }
+   .reg {
+     width:300px;
+     margin: auto;
+     text-align: center;
+     border-radius:15px 15px 0px 0px;
+   }
+   .first {
+     width:700px;
+     margin:auto;
+     background-color: azure;
+     padding: 2px 2px 2px 2px;
+     border: 2px solid black;
+   }
+   form {
+     padding:10px;
+   }
+   #name {
+     width: 110%;
+     height: 100%;
+   }
+   .namess {
+     margin-left: 10px;
+     margin-top: 20px;
+     width: 125px;
+     font-size: 18px;
+     font-weight: 700px;
+   }
+   .FIRST {
+   position: relative;
+   left: 80px;
+   top:-23px;
+   line-height: 20px;
+   border-radius: 3px;
+   padding: 0 18px;
+   font-size: 14px;
+   }
+   .LAST {
+     position: relative;
+     left: 107px;
+     top: -25px;
+     line-height: 20px;
+     border-radius: 3px;
+     padding: 0 12px;
+     font-size: 14px;
+   } 
+   .number {
+     position:relative;
+     left:100px;
+     top: -21px;
+     line-height: 20px;
+     width: 432px;
+     border-radius: 4px;
+     padding: 0 12px;
+     font-size: 14px;
+}
+.email {
+  position:relative;
+     left:100px;
+     top: -21px;
+     line-height: 20px;
+     width: 432px;
+     border-radius: 4px;
+     padding: 0 12px;
+     font-size: 14px;
+
+} 
+#gender { 
+position:relative;
+     left:100px;
+     top: -21px;
+     line-height: 20px;
+     width: 432px;
+     border-radius: 4px;
+     padding: 0 12px;
+     font-size: 14px;
+} 
+ .country {
+  position:relative;
+     left:100px;
+     top: -21px;
+     line-height: 20px;
+     width: 432px;
+     border-radius: 4px;
+     padding: 0 12px;
+     font-size: 14px;
+ }
+ .state {
+  position:relative;
+     left:100px;
+     top: -21px;
+     line-height: 20px;
+     width: 432px;
+     border-radius: 4px;
+     padding: 0 12px;
+     font-size: 14px;
+ }
+ #password {
+  position:relative;
+     left:100px;
+     top: -21px;
+     line-height: 20px;
+     width: 432px;
+     border-radius: 4px;
+     padding: 0 12px;
+     font-size: 14px;
+ }
+ .name{
+  margin-left: 10px;
+     margin-top: 30px;
+     width: 125px;
+     font-size: 16px;
+     font-weight: 400px;
+ }
+ .footer { 
+     display: flex;
+   justify-content: center;
+   margin-top: 33px;
+   font-size: 20px;
+}
+
+   </style>
+</head>
+
+<body>
+  <header> 
+    <img src="https://zuri-inc.com/wp-content/uploads/2020/09/zuri.jpg"
+    alt="I4GxZuri Logo" width="200" height="80" class="logo"> 
+    <nav> 
+    <ul class="nav"> 
+    <li> 
+         <a href="../index.html"> About </a> </li>
+     <li>
+        <a href="#reg"> Register </a>
+      </li>
+      <li> 
+        <a href="./contact.html"> Contact </a>
+      </li>
+    </ul>
+  </nav>
+  <a href="./login.html"> <button> Login</button> </a>
+  </header>
+<main> 
+    <div class="reg"> 
+        <h1> Registration Form</h1>
+    </div>
+ <div class="first">
+ <form> 
+<div id="name"> 
+    <h2 class="namess"> Name </h2>
+    <input type="text"  class=" FIRST" name="1st" placeholder="Enter Your First Name">
+    <input type="text"  class=" LAST" name="Lastname" placeholder="Enter Your Last Name">
+      
+</div>
+<h2 class="namess"> Phone No</h2>
+  <input class="number" type="text" name="phone" placeholder="Enter Your Number"> 
+ 
+ 
+  <h2 class="namess"> Gender</h2>
+  <select name="gender" id="gender" required>
+    <option value="select-gender" selected disabled>
+      Select Your Gender
+    </option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+
+<h2 class="namess"> Country</h2>
+    <input class="country" type="text" name="company" placeholder="Enter Your Country">
+  
+    <h2 class="namess"> State</h2>
+       <input class="state" type="text" name="State" placeholder="Enter Your Last Name">
+
+<h2 class="namess"> Email </h2>
+    <input class="email" type="text" name="email" placeholder="Enter Your email">
+ 
+    <h2 class="namess">Password</h2>
+      <input type="password" name="password" id="password" placeholder="Enter Your Password "
+                required/>
+  <h2 class="name"> Confirm password</h2>
+    <input type="password" name="password" id="password" placeholder="Confirm Your Password"
+                required/>
+
+ </form>
+ </div>
+</main>
+<footer> 
+  <div class="footer">
+    <p>Designed by Jamiu Rofiat</p>
+    </div>
+</footer>
+</body>
+</html>
